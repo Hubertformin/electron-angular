@@ -1,0 +1,16 @@
+<div style="position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);">
+  <nz-empty
+      [nzNotFoundImage]="
+        'https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original'
+      "
+      [nzNotFoundContent]="contentTpl"
+      [nzNotFoundFooter]="footerTpl"
+    >
+      <ng-template #contentTpl>
+        <span> Hey there! Happy coding.</span>
+      </ng-template>
+      <ng-template #footerTpl>
+        <button nz-button nzType="primary" (click)="onClick()">Ok, Thanks!</button>
+      </ng-template>
+    </nz-empty>
+</div>
